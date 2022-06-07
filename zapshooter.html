@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      overflow: hidden;
+      background: url("bakgrund.jpg");   
+      background-size: cover;  
+    }
+    #board {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 40px auto;
+      border: 2px solid black;  
+      background-color: white;      
+      overflow: hidden;  
+    }
+
+    #jet {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url("jet1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      bottom: 0px;
+    } 
+
+    .bullets {
+      position: absolute;
+      bottom: 40px;
+      left: 51%;
+      width: 45px;
+      height: 45px;
+      background: url("laser.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .rocks {
+      position: absolute;
+      top: 0px;
+      width: 70px;
+      height: 70px;
+      background: url("ship.png"); 
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    #points {
+      position: left;
+      top: 0px;
+      margin: 50px;
+      font-size: 7em;
+      color: orchid;     
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    }
+  </style>
+  <script src="app.js" defer></script>
+  <body>
+    <div id="board">
+      <div class="rocks"></div>
+      <div id="jet"></div>
+    </div>
+    <div id="points">0</div> 
+
+    
+  </body> 
+  
+  
+
+</html> 
